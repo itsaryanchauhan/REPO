@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://SCRIPTS/office_popup_1.gd" id="1_wl8sp"]
 [ext_resource type="Texture2D" uid="uid://dvqns353vxik7" path="res://ASSET/OFFICE/indian.png" id="2_dmxq8"]
-[ext_resource type="Texture2D" uid="uid://s2yglktvly0i" path="res://ASSET/OFFICE/OVERLAY_BLACK.png" id="2_w3lsa"]
+[ext_resource type="Texture2D" uid="uid://bm2xb3jtmrdj1" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/OVERLAY_BLACK.png" id="2_w3lsa"]
 [ext_resource type="Texture2D" uid="uid://dybs2rmaophkp" path="res://ASSET/OFFICE/nk.png" id="3_t8a86"]
 [ext_resource type="Texture2D" uid="uid://65xna7ugaxp5" path="res://ASSET/OFFICE/russia.png" id="4_1cnl7"]
 [ext_resource type="Texture2D" uid="uid://c8s6prusd1oja" path="res://ASSET/OFFICE/uk.png" id="5_6wu4f"]

@@ -96,6 +96,7 @@ texture_pressed = ExtResource("11_xehiu")
 
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-288, -456)
+scale = Vector2(0.981341, 0.984321)
 texture = ExtResource("12_aoagn")
 offset = Vector2(1250, 1000)
 flip_h = true

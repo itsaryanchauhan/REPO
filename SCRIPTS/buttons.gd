@@ -8,7 +8,6 @@ func _ready():
 	var enter_city_button = $enter_city
 	var spin_the_wheel_button = $spin_the_wheel
 	var constitution_quiz_button = $constitution_quiz
-	var website_button = $website_button
 	
 	if button1:
 		button1.pressed.connect(_on_Button1_pressed)
@@ -78,3 +77,7 @@ func _on_crossbutton_pressed() -> void:
 
 func _on_document_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/office_popup_1.tscn")
+
+
+func _on_texture_button_pressed() -> void:
+	OS.shell_open("https://harsh16bhardwaj.github.io/San_Sam/")

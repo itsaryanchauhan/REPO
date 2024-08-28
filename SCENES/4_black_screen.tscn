@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://x04onk0574bu"]
+
+[ext_resource type="Script" path="res://SCRIPTS/black_screen_to_citadel_ui.gd" id="1_m2gdh"]
+[ext_resource type="Texture2D" uid="uid://cl7flsa25wbwj" path="res://ASSET/BLACK_BG.png" id="5_x4k64"]
+
+[node name="4 BLACK SCREEN" type="Node2D"]
+script = ExtResource("1_m2gdh")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Timer" type="Timer" parent="Control"]
+
+[node name="BACKGROUND" type="Sprite2D" parent="."]
+position = Vector2(-248, -440)
+scale = Vector2(0.965566, 0.975309)
+texture = ExtResource("5_x4k64")
+offset = Vector2(1250, 1000)
+flip_h = true
+
+[connection signal="timeout" from="Control/Timer" to="." method="_on_timer_timeout"]

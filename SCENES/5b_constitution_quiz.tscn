@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://bn65sj0y8bpux"]
+
+[ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_qm27k"]
+[ext_resource type="Texture2D" uid="uid://bu0qhk5v1cgd8" path="res://ASSET/CASH/CASH_LOGO.png" id="2_ncsd8"]
+[ext_resource type="Texture2D" uid="uid://lyrlawytmk04" path="res://ASSET/CASH/CASH_LOGO_BACKGROUND.png" id="3_8hsoy"]
+[ext_resource type="Texture2D" uid="uid://b3lavuoe00v5b" path="res://ASSET/CITADEL/5b_CONSTITUTION_QUIZ/BACKGROUND.png" id="6_iytj5"]
+[ext_resource type="Script" path="res://SCRIPTS/overlay_spin_wheel.gd" id="7_xo0de"]
+[ext_resource type="Texture2D" uid="uid://c076ronytkb0a" path="res://ASSET/CITADEL/5b_CONSTITUTION_QUIZ/RULES_OVERLAY.png" id="8_vtud8"]
+[ext_resource type="Texture2D" uid="uid://3s8yroeakpik" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/CLOSE_BUTTON.png" id="9_1b2w4"]
+
+[node name="5b Constitution Quiz" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qm27k")
+
+[node name="cash" type="Sprite2D" parent="Control"]
+top_level = true
+z_index = 1
+position = Vector2(64, 64)
+texture = ExtResource("2_ncsd8")
+
+[node name="cash_bg" type="Sprite2D" parent="Control"]
+top_level = true
+visibility_layer = 3
+position = Vector2(131, 64)
+texture = ExtResource("3_8hsoy")
+
+[node name="BACKGROUND" type="Sprite2D" parent="."]
+position = Vector2(-248, -440)
+scale = Vector2(0.956093, 0.974602)
+texture = ExtResource("6_iytj5")
+offset = Vector2(1250, 1000)
+flip_h = true
+
+[node name="overlay" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("7_xo0de")
+
+[node name="TextureRect" type="TextureRect" parent="overlay"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 232.0
+offset_right = 1942.0
+offset_bottom = 1289.0
+texture = ExtResource("8_vtud8")
+stretch_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="overlay"]
+layout_mode = 0
+offset_left = 1792.0
+offset_top = 240.0
+offset_right = 1865.0
+offset_bottom = 312.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_1b2w4")
+
+[connection signal="pressed" from="overlay/TextureButton" to="overlay" method="_on_texture_button_pressed"]

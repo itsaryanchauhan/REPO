@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr88lhm1unbxo"]
+
+[ext_resource type="Script" path="res://SCRIPTS/vid_to_black_screen.gd" id="1_fu7dv"]
+[ext_resource type="Script" path="res://SCRIPTS/skip_video.gd" id="2_gu03q"]
+[ext_resource type="Texture2D" uid="uid://c4upso54h8h1h" path="res://ASSET/VIDEO/SKIP.png" id="2_o3tuv"]
+[ext_resource type="VideoStream" path="res://ASSET/VIDEO/INTRO_VIDEO.ogv" id="4_oi1o7"]
+
+[node name="INTRO VIDEO" type="Node2D"]
+script = ExtResource("1_fu7dv")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_gu03q")
+
+[node name="skip_button" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 912.0
+offset_top = 8.0
+offset_right = 1014.0
+offset_bottom = 118.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_o3tuv")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.00029, 0.993196)
+stream = ExtResource("4_oi1o7")
+autoplay = true
+
+[node name="Timer" type="Timer" parent="Control"]
+wait_time = 62.0
+
+[connection signal="pressed" from="Control/skip_button" to="." method="_on_skip_button_pressed"]
+[connection signal="timeout" from="Control/Timer" to="." method="_on_timer_timeout"]

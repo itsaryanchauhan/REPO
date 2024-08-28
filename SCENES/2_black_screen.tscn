@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddsu5raobagjb"]
+
+[ext_resource type="Script" path="res://SCRIPTS/black_screen_to_video.gd" id="1_7mjac"]
+[ext_resource type="Texture2D" uid="uid://cl7flsa25wbwj" path="res://ASSET/BLACK_BG.png" id="6_6bvis"]
+
+[node name="2 BLACK SCREEN" type="Node2D"]
+script = ExtResource("1_7mjac")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Timer" type="Timer" parent="Control"]
+wait_time = 2.0
+
+[node name="BACKGROUND" type="Sprite2D" parent="."]
+position = Vector2(-248, -440)
+scale = Vector2(0.965192, 0.975345)
+texture = ExtResource("6_6bvis")
+offset = Vector2(1250, 1000)
+flip_h = true
+
+[connection signal="timeout" from="Control/Timer" to="." method="_on_timer_timeout"]

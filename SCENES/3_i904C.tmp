@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr88lhm1unbxo"]
+
+[ext_resource type="Script" path="res://SCRIPTS/vid_to_black_screen.gd" id="1_fu7dv"]
+[ext_resource type="Texture2D" uid="uid://c4upso54h8h1h" path="res://ASSET/VIDEO/SKIP.png" id="2_o3tuv"]
+[ext_resource type="VideoStream" path="res://ASSET/VIDEO/INTRO_VIDEO.ogv" id="3_76eo5"]
+[ext_resource type="Texture2D" uid="uid://heu0m2dli6uy" path="res://ASSET/LOGO_BG.png" id="4_dtp8i"]
+
+[node name="INTRO VIDEO" type="Node2D"]
+script = ExtResource("1_fu7dv")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="skip_button" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 952.0
+offset_top = 8.0
+offset_right = 1054.0
+offset_bottom = 118.0
+texture_normal = ExtResource("2_o3tuv")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("3_76eo5")
+autoplay = true
+
+[node name="Timer" type="Timer" parent="Control"]
+wait_time = 2.0
+
+[node name="BACKGROUND" type="Sprite2D" parent="."]
+position = Vector2(-248, -440)
+scale = Vector2(0.984251, 1.00175)
+texture = ExtResource("4_dtp8i")
+offset = Vector2(1250, 1000)
+flip_h = true
+
+[connection signal="pressed" from="Control/skip_button" to="." method="_on_skip_button_pressed"]
+[connection signal="timeout" from="Control/Timer" to="." method="_on_timer_timeout"]

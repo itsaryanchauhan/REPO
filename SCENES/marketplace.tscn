@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cidmuitqfiyqq"]
+[gd_scene load_steps=14 format=3 uid="uid://cidmuitqfiyqq"]
 
 [ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_trldq"]
 [ext_resource type="Texture2D" uid="uid://ch1o80r8fo357" path="res://ASSET/CHANGE_SCENES_BUTTONS/OFFICE_SMALL.png" id="2_rt6r1"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cix56hhd6his5" path="res://ASSET/OTHER_BUTTONS/PAUSE_BUTTON.png" id="10_hkgq3"]
 [ext_resource type="Texture2D" uid="uid://b31kjercwhdl6" path="res://ASSET/OTHER_BUTTONS/PLAY_BUTTON.png" id="11_73lrn"]
 [ext_resource type="Texture2D" uid="uid://domys53cn105c" path="res://ASSET/MARKETPLACE/MARKET_BACKGROUND.png" id="12_brhse"]
+[ext_resource type="Texture2D" uid="uid://djd5aid8aif55" path="res://ASSET/MARKETPLACE/shopping_button.png" id="12_tf1xj"]
 
 [node name="MARKET PLACE" type="Node2D"]
 
@@ -21,6 +22,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_trldq")
+metadata/_edit_use_anchors_ = true
 
 [node name="office" type="TextureButton" parent="Control"]
 top_level = true
@@ -31,6 +33,7 @@ offset_right = 1901.0
 offset_bottom = 548.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_rt6r1")
+metadata/_edit_use_anchors_ = true
 
 [node name="living_room" type="TextureButton" parent="Control"]
 top_level = true
@@ -41,6 +44,7 @@ offset_right = 1898.0
 offset_bottom = 715.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("3_jvalc")
+metadata/_edit_use_anchors_ = true
 
 [node name="market" type="TextureButton" parent="Control"]
 top_level = true
@@ -52,6 +56,7 @@ offset_bottom = 884.0
 scale = Vector2(1.01348, 1.06466)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("4_vmqea")
+metadata/_edit_use_anchors_ = true
 
 [node name="shopping_mall" type="TextureButton" parent="Control"]
 top_level = true
@@ -62,6 +67,7 @@ offset_right = 1903.0
 offset_bottom = 1060.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("5_1fwr2")
+metadata/_edit_use_anchors_ = true
 
 [node name="cash" type="Sprite2D" parent="Control"]
 top_level = true
@@ -82,6 +88,7 @@ offset_left = 1720.0
 offset_right = 1920.0
 offset_bottom = 96.0
 texture_normal = ExtResource("8_rd030")
+metadata/_edit_use_anchors_ = true
 
 [node name="progress_bar_bg" type="Sprite2D" parent="Control"]
 top_level = true
@@ -97,6 +104,18 @@ offset_right = 986.0
 offset_bottom = 108.0
 texture_normal = ExtResource("10_hkgq3")
 texture_pressed = ExtResource("11_73lrn")
+metadata/_edit_use_anchors_ = true
+
+[node name="auntie-BUTTON" type="TextureButton" parent="Control"]
+z_index = 20
+layout_mode = 0
+offset_left = 604.0
+offset_top = 262.0
+offset_right = 805.0
+offset_bottom = 761.0
+scale = Vector2(0.9, 0.9)
+texture_normal = ExtResource("12_tf1xj")
+metadata/_edit_use_anchors_ = true
 
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-288, -456)
@@ -104,3 +123,5 @@ scale = Vector2(0.999305, 0.997701)
 texture = ExtResource("12_brhse")
 offset = Vector2(1250, 1000)
 flip_h = true
+
+[connection signal="pressed" from="Control/auntie-BUTTON" to="Control" method="_on_auntie_button_pressed"]

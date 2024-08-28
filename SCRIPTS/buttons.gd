@@ -81,3 +81,28 @@ func _on_document_button_pressed() -> void:
 
 func _on_texture_button_pressed() -> void:
 	OS.shell_open("https://harsh16bhardwaj.github.io/San_Sam/")
+
+
+func _on_background_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/living_room.tscn")
+
+func _on_salesman_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/salesman_pressed.tscn")
+
+
+func _on_mummy_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/wife_popup.tscn")
+
+
+func _on_cross_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/shopping_mall.tscn")
+	
+func _on_auntie_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/auntie_popup.tscn")
+
+func _on_cross_button_2_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/marketplace.tscn")
+
+
+func _on_cross_button_3_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/living_room.tscn")

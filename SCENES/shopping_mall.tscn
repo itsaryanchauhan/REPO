@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dqdpr75wlechd"]
+[gd_scene load_steps=14 format=3 uid="uid://dqdpr75wlechd"]
 
 [ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_h0xwp"]
 [ext_resource type="Texture2D" uid="uid://ch1o80r8fo357" path="res://ASSET/CHANGE_SCENES_BUTTONS/OFFICE_SMALL.png" id="2_5bxmw"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cix56hhd6his5" path="res://ASSET/OTHER_BUTTONS/PAUSE_BUTTON.png" id="10_v807w"]
 [ext_resource type="Texture2D" uid="uid://b31kjercwhdl6" path="res://ASSET/OTHER_BUTTONS/PLAY_BUTTON.png" id="11_xehiu"]
 [ext_resource type="Texture2D" uid="uid://diacrdsdhq8ki" path="res://ASSET/SHOPPING_MALL/SHOPPING_MALL_BACKGROUND.png" id="12_aoagn"]
+[ext_resource type="Texture2D" uid="uid://dr6iyvr6y518y" path="res://ASSET/SHOPPING_MALL/salesman_button.png" id="12_eieey"]
 
 [node name="SHOPPING MALL" type="Node2D"]
 
@@ -21,6 +22,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_h0xwp")
+metadata/_edit_use_anchors_ = true
 
 [node name="office" type="TextureButton" parent="Control"]
 top_level = true
@@ -30,6 +32,7 @@ offset_top = 400.0
 offset_right = 1901.0
 offset_bottom = 548.0
 texture_normal = ExtResource("2_5bxmw")
+metadata/_edit_use_anchors_ = true
 
 [node name="living_room" type="TextureButton" parent="Control"]
 top_level = true
@@ -39,6 +42,7 @@ offset_top = 568.0
 offset_right = 1898.0
 offset_bottom = 715.0
 texture_normal = ExtResource("3_sttpq")
+metadata/_edit_use_anchors_ = true
 
 [node name="market" type="TextureButton" parent="Control"]
 top_level = true
@@ -49,6 +53,7 @@ offset_right = 1905.0
 offset_bottom = 884.0
 scale = Vector2(1.01348, 1.06466)
 texture_normal = ExtResource("4_sa61v")
+metadata/_edit_use_anchors_ = true
 
 [node name="shopping_mall" type="TextureButton" parent="Control"]
 top_level = true
@@ -58,6 +63,7 @@ offset_top = 912.0
 offset_right = 1903.0
 offset_bottom = 1060.0
 texture_normal = ExtResource("5_q1plq")
+metadata/_edit_use_anchors_ = true
 
 [node name="cash" type="Sprite2D" parent="Control"]
 top_level = true
@@ -78,6 +84,7 @@ offset_left = 1720.0
 offset_right = 1920.0
 offset_bottom = 96.0
 texture_normal = ExtResource("8_42s75")
+metadata/_edit_use_anchors_ = true
 
 [node name="progress_bar_bg" type="Sprite2D" parent="Control"]
 top_level = true
@@ -93,6 +100,17 @@ offset_right = 986.0
 offset_bottom = 108.0
 texture_normal = ExtResource("10_v807w")
 texture_pressed = ExtResource("11_xehiu")
+metadata/_edit_use_anchors_ = true
+
+[node name="salesman" type="TextureButton" parent="Control"]
+z_index = 20
+layout_mode = 0
+offset_left = 664.0
+offset_top = 454.0
+offset_right = 1020.0
+offset_bottom = 1478.0
+scale = Vector2(0.513, 0.423)
+texture_normal = ExtResource("12_eieey")
 
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-288, -456)
@@ -100,3 +118,5 @@ scale = Vector2(0.981341, 0.984321)
 texture = ExtResource("12_aoagn")
 offset = Vector2(1250, 1000)
 flip_h = true
+
+[connection signal="pressed" from="Control/salesman" to="Control" method="_on_salesman_pressed"]

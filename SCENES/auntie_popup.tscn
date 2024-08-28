@@ -1,0 +1,147 @@
+[gd_scene load_steps=16 format=3 uid="uid://cy27uhyx631ti"]
+
+[ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_1k8ew"]
+[ext_resource type="Texture2D" uid="uid://ch1o80r8fo357" path="res://ASSET/CHANGE_SCENES_BUTTONS/OFFICE_SMALL.png" id="2_xja76"]
+[ext_resource type="Texture2D" uid="uid://cwdk7l5leisly" path="res://ASSET/CHANGE_SCENES_BUTTONS/LIVING_ROOM_SMALL.png" id="3_gfi7b"]
+[ext_resource type="Texture2D" uid="uid://cvnoj5ybmlfpg" path="res://ASSET/CHANGE_SCENES_BUTTONS/MARKETPLACE_SMALL.png" id="4_t4k73"]
+[ext_resource type="Texture2D" uid="uid://cxdlylc6ujwpj" path="res://ASSET/CHANGE_SCENES_BUTTONS/SHOPPING_MALL_SMALL.png" id="5_4qsru"]
+[ext_resource type="Texture2D" uid="uid://bu0qhk5v1cgd8" path="res://ASSET/CASH/CASH_LOGO.png" id="6_c3b66"]
+[ext_resource type="Texture2D" uid="uid://lyrlawytmk04" path="res://ASSET/CASH/CASH_LOGO_BACKGROUND.png" id="7_hmdqh"]
+[ext_resource type="Texture2D" uid="uid://bb5qt072cf0wc" path="res://ASSET/OTHER_BUTTONS/SLEEP.png" id="8_skor6"]
+[ext_resource type="Texture2D" uid="uid://60dhbax7astx" path="res://ASSET/PROGRESS_BAR/PROGRESS_BAR_BACKGROUND.png" id="9_jivvu"]
+[ext_resource type="Texture2D" uid="uid://cix56hhd6his5" path="res://ASSET/OTHER_BUTTONS/PAUSE_BUTTON.png" id="10_wsn82"]
+[ext_resource type="Texture2D" uid="uid://b31kjercwhdl6" path="res://ASSET/OTHER_BUTTONS/PLAY_BUTTON.png" id="11_1w20l"]
+[ext_resource type="Texture2D" uid="uid://1q3mkalfcfj8" path="res://ASSET/LIVING_ROOM/transparent_full_screen.png" id="12_6loxt"]
+[ext_resource type="Texture2D" uid="uid://67krgixypwgp" path="res://ASSET/MARKETPLACE/women_popup.png" id="13_ylrap"]
+[ext_resource type="Texture2D" uid="uid://3s8yroeakpik" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/CLOSE_BUTTON.png" id="14_otgvp"]
+[ext_resource type="Texture2D" uid="uid://domys53cn105c" path="res://ASSET/MARKETPLACE/MARKET_BACKGROUND.png" id="15_wi8jm"]
+
+[node name="MARKET PLACE" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_1k8ew")
+metadata/_edit_use_anchors_ = true
+
+[node name="office" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 1752.0
+offset_top = 400.0
+offset_right = 1901.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_xja76")
+metadata/_edit_use_anchors_ = true
+
+[node name="living_room" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 1752.0
+offset_top = 568.0
+offset_right = 1898.0
+offset_bottom = 715.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_gfi7b")
+metadata/_edit_use_anchors_ = true
+
+[node name="market" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 1752.0
+offset_top = 736.0
+offset_right = 1905.0
+offset_bottom = 884.0
+scale = Vector2(1.01348, 1.06466)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_t4k73")
+metadata/_edit_use_anchors_ = true
+
+[node name="shopping_mall" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 1752.0
+offset_top = 912.0
+offset_right = 1903.0
+offset_bottom = 1060.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_4qsru")
+metadata/_edit_use_anchors_ = true
+
+[node name="cash" type="Sprite2D" parent="Control"]
+top_level = true
+z_index = 1
+position = Vector2(64, 64)
+texture = ExtResource("6_c3b66")
+
+[node name="cash_bg" type="Sprite2D" parent="Control"]
+top_level = true
+visibility_layer = 3
+position = Vector2(131, 64)
+texture = ExtResource("7_hmdqh")
+
+[node name="sleep_button" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 1720.0
+offset_right = 1920.0
+offset_bottom = 96.0
+texture_normal = ExtResource("8_skor6")
+metadata/_edit_use_anchors_ = true
+
+[node name="progress_bar_bg" type="Sprite2D" parent="Control"]
+top_level = true
+position = Vector2(1608, 232)
+texture = ExtResource("9_jivvu")
+
+[node name="play_pause_button" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 896.0
+offset_top = 24.0
+offset_right = 986.0
+offset_bottom = 108.0
+texture_normal = ExtResource("10_wsn82")
+texture_pressed = ExtResource("11_1w20l")
+metadata/_edit_use_anchors_ = true
+
+[node name="POPUP_BG" type="TextureRect" parent="Control"]
+z_index = 21
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 1961.0
+offset_bottom = 1121.0
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("12_6loxt")
+
+[node name="AUNTIE_CLICKED" type="TextureRect" parent="Control"]
+z_index = 21
+layout_mode = 0
+offset_left = 242.0
+offset_top = 12.0
+offset_right = 978.0
+offset_bottom = 538.0
+scale = Vector2(2.31118, 2.01722)
+texture = ExtResource("13_ylrap")
+
+[node name="cross_button2" type="TextureButton" parent="Control"]
+z_index = 21
+layout_mode = 0
+offset_left = 82.0
+offset_top = 26.0
+offset_right = 155.0
+offset_bottom = 98.0
+texture_normal = ExtResource("14_otgvp")
+
+[node name="BACKGROUND" type="Sprite2D" parent="."]
+position = Vector2(-288, -456)
+scale = Vector2(0.999305, 0.997701)
+texture = ExtResource("15_wi8jm")
+offset = Vector2(1250, 1000)
+flip_h = true
+
+[connection signal="pressed" from="Control/cross_button2" to="Control" method="_on_cross_button_2_pressed"]

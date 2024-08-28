@@ -98,11 +98,11 @@ texture_pressed = ExtResource("11_4621e")
 [node name="document_button" type="TextureButton" parent="Control"]
 z_index = 10
 layout_mode = 0
-offset_left = 815.0
-offset_top = 778.0
-offset_right = 1843.0
-offset_bottom = 1021.0
-scale = Vector2(0.6, 0.6)
+offset_left = 773.0
+offset_top = 769.0
+offset_right = 1801.0
+offset_bottom = 1012.0
+scale = Vector2(0.521657, 0.517013)
 texture_normal = ExtResource("13_lqs3k")
 
 [node name="enter_city" type="TextureButton" parent="Control"]
@@ -127,6 +127,7 @@ offset_bottom = 40.0
 
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-288, -456)
+scale = Vector2(0.981388, 0.983136)
 texture = ExtResource("12_7ubv7")
 offset = Vector2(1250, 1000)
 

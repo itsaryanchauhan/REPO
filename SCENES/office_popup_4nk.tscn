@@ -25,14 +25,15 @@ metadata/_edit_use_anchors_ = true
 z_index = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.075
-anchor_top = 0.2
-anchor_right = 0.075
-anchor_bottom = 0.2
+anchor_left = 1.725
+anchor_top = 0.95
+anchor_right = 1.725
+anchor_bottom = 1.0
 offset_left = -23.0
 offset_top = -2.0
 offset_right = 1936.0
 offset_bottom = 1053.0
+scale = Vector2(0.938911, 0.947995)
 texture = ExtResource("1_8pnjj")
 metadata/_edit_use_anchors_ = true
 
@@ -83,6 +84,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="background" type="Sprite2D" parent="main_scene"]
 position = Vector2(952, 534)
+scale = Vector2(0.968026, 0.970704)
 texture = ExtResource("6_4f63s")
 
 [node name="Constitution_book" type="TextureRect" parent="main_scene"]

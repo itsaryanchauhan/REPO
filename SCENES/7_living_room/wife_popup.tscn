@@ -108,33 +108,34 @@ texture_normal = ExtResource("10_ar2i0")
 texture_pressed = ExtResource("11_bhiqv")
 metadata/_edit_use_anchors_ = true
 
-[node name="dialog_bg" type="TextureRect" parent="Control"]
-z_index = 20
-layout_mode = 0
-offset_left = 28.0
-offset_top = 10.0
-offset_right = 1981.0
-offset_bottom = 1123.0
-scale = Vector2(0.96, 0.96)
-texture = ExtResource("12_ch3oy")
-
 [node name="mummy_clicked" type="TextureRect" parent="Control"]
 z_index = 20
 layout_mode = 0
-offset_left = 136.0
-offset_top = 66.0
-offset_right = 1157.0
-offset_bottom = 1080.0
+offset_left = 148.0
+offset_top = 26.0
+offset_right = 1169.0
+offset_bottom = 1040.0
 texture = ExtResource("13_xr21y")
 
 [node name="cross_button3" type="TextureButton" parent="Control"]
+top_level = true
 z_index = 20
 layout_mode = 0
-offset_left = 1748.0
-offset_top = 22.0
-offset_right = 1821.0
-offset_bottom = 94.0
+offset_left = 1756.0
+offset_top = 64.0
+offset_right = 1829.0
+offset_bottom = 136.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("14_vqtnj")
+
+[node name="wifey_overlay" type="TextureRect" parent="Control"]
+z_index = 1
+layout_mode = 0
+offset_left = 59.0
+offset_top = 53.0
+offset_right = 1843.0
+offset_bottom = 1043.0
+texture = ExtResource("12_ch3oy")
 
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-288, -456)

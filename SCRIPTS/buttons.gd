@@ -5,9 +5,9 @@ func _ready():
 	var button2 = $living_room
 	var button3 = $market
 	var button4 = $shopping_mall
-	var enter_city_button = $enter_city
 	var spin_the_wheel_button = $spin_the_wheel
 	var constitution_quiz_button = $constitution_quiz
+	var enter_city = $enter_city_button
 	
 	if button1:
 		button1.pressed.connect(_on_Button1_pressed)
@@ -29,11 +29,6 @@ func _ready():
 	else:
 		print("Button4 not found")
 		
-	if enter_city_button:
-		enter_city_button.pressed.connect(_on_enter_city_button_pressed)
-	else:
-		print("Button4 not found")
-		
 	if spin_the_wheel_button:
 		spin_the_wheel_button.pressed.connect(_spin_button_pressed)
 	else:
@@ -44,6 +39,10 @@ func _ready():
 	else:
 		print("Button4 not found")
 
+	if enter_city:
+		enter_city.pressed.connect(_enter_city_button_pressed)
+	else:
+		print("Button4 not found")
 	
 
 func _on_Button1_pressed():
@@ -57,16 +56,14 @@ func _on_Button3_pressed():
 	
 func _on_Button4_pressed():
 	get_tree().change_scene_to_file("res://SCENES/shopping_mall.tscn")
-
-func _on_enter_city_button_pressed():
-	get_tree().change_scene_to_file("res://SCENES/office.tscn")
 	
 func _spin_button_pressed():
-	get_tree().change_scene_to_file("res://SCENES/5a_spin_the_wheel.tscn")
+	get_tree().change_scene_to_file("res://SCENES/5_Citadel/5a_spin_the_wheel.tscn")
 	
 func _quiz_button_pressed():
-	get_tree().change_scene_to_file("res://SCENES/5b_constitution_quiz.tscn")
-
+	get_tree().change_scene_to_file("res://SCENES/5_Citadel/5b_constitution_quiz.tscn")
+func _enter_city_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/office.tscn")
 	
 func _on_website_button_pressed():
 	OS.shell_open("https://harsh16bhardwaj.github.io/San_Sam/")
@@ -76,7 +73,7 @@ func _on_crossbutton_pressed() -> void:
 
 
 func _on_document_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/office_popup_1.tscn")
+	get_tree().change_scene_to_file("res://SCENES/6_office/office_popup_1.tscn")
 
 
 func _on_texture_button_pressed() -> void:
@@ -87,11 +84,11 @@ func _on_background_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/living_room.tscn")
 
 func _on_salesman_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/salesman_pressed.tscn")
+	get_tree().change_scene_to_file("res://SCENES/9_shopping_mall/salesman_pressed.tscn")
 
 
 func _on_mummy_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/wife_popup.tscn")
+	get_tree().change_scene_to_file("res://SCENES/7_living_room/wife_popup.tscn")
 
 
 func _on_cross_button_pressed() -> void:
@@ -106,3 +103,11 @@ func _on_cross_button_2_pressed() -> void:
 
 func _on_cross_button_3_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/living_room.tscn")
+
+
+func _on_bachha_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/7_living_room/child_dialog.tscn")
+
+
+func _on_clothes_shop_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/9_shopping_mall/clothes_shop.tscn")

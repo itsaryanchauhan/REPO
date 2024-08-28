@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ch7g360yahssx"]
+[gd_scene load_steps=15 format=3 uid="uid://ch7g360yahssx"]
 
 [ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_yy08q"]
 [ext_resource type="Texture2D" uid="uid://ch1o80r8fo357" path="res://ASSET/CHANGE_SCENES_BUTTONS/OFFICE_SMALL.png" id="2_4iwhj"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cix56hhd6his5" path="res://ASSET/OTHER_BUTTONS/PAUSE_BUTTON.png" id="10_8y7f6"]
 [ext_resource type="Texture2D" uid="uid://b31kjercwhdl6" path="res://ASSET/OTHER_BUTTONS/PLAY_BUTTON.png" id="11_eat26"]
 [ext_resource type="Texture2D" uid="uid://byg7pkaa8dr33" path="res://ASSET/LIVING_ROOM/mom_button.png" id="12_urbxg"]
+[ext_resource type="Texture2D" uid="uid://cm5pikncdgcar" path="res://ASSET/LIVING_ROOM/bachha_button.png" id="13_3x8h0"]
 
 [node name="LIVING ROOM" type="Node2D"]
 
@@ -114,7 +115,19 @@ offset_top = 542.0
 offset_right = 1413.0
 offset_bottom = 1026.0
 scale = Vector2(0.8, 0.8)
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("12_urbxg")
+
+[node name="bachha_button" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 916.0
+offset_top = 569.0
+offset_right = 1426.0
+offset_bottom = 1579.0
+scale = Vector2(0.264153, 0.246139)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("13_3x8h0")
 
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-287, -452)
@@ -124,3 +137,4 @@ offset = Vector2(1250, 1000)
 flip_h = true
 
 [connection signal="pressed" from="Control/mummy_button" to="Control" method="_on_mummy_button_pressed"]
+[connection signal="pressed" from="Control/bachha_button" to="Control" method="_on_bachha_button_pressed"]

@@ -112,11 +112,11 @@ metadata/_edit_use_anchors_ = true
 [node name="salesman" type="TextureButton" parent="Control"]
 z_index = 20
 layout_mode = 0
-offset_left = 1311.0
-offset_top = 527.0
-offset_right = 1667.0
-offset_bottom = 1551.0
-scale = Vector2(0.41082, 0.387638)
+offset_left = 1261.0
+offset_top = 445.0
+offset_right = 1617.0
+offset_bottom = 1469.0
+scale = Vector2(0.592841, 0.532495)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("12_eieey")
 

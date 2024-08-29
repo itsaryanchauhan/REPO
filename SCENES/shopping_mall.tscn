@@ -39,7 +39,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="living_room" type="TextureButton" parent="Control"]
 top_level = true
-z_index = 1
+z_index = 2
 layout_mode = 0
 offset_left = 1752.0
 offset_top = 568.0
@@ -123,11 +123,11 @@ texture_normal = ExtResource("12_eieey")
 [node name="clothes_shop_button" type="TextureButton" parent="Control"]
 top_level = true
 layout_mode = 0
-offset_left = -40.0
-offset_top = 235.0
-offset_right = 645.0
-offset_bottom = 1252.0
-scale = Vector2(0.685641, 0.699221)
+offset_left = -39.0
+offset_top = 239.0
+offset_right = 324.0
+offset_bottom = 747.0
+scale = Vector2(1.37523, 1.4101)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("13_6xy11")
 
@@ -136,8 +136,8 @@ top_level = true
 layout_mode = 0
 offset_left = 440.0
 offset_top = 470.0
-offset_right = 777.0
-offset_bottom = 935.0
+offset_right = 719.0
+offset_bottom = 771.0
 scale = Vector2(0.988641, 0.998538)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("14_w5kkp")
@@ -145,9 +145,9 @@ texture_normal = ExtResource("14_w5kkp")
 [node name="game_zone_button" type="TextureButton" parent="Control"]
 top_level = true
 layout_mode = 0
-offset_left = 1440.0
+offset_left = 1434.0
 offset_top = 217.0
-offset_right = 1928.0
+offset_right = 1780.0
 offset_bottom = 970.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("15_wt5tb")

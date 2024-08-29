@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://h1hwa527mq64"]
 
-[ext_resource type="Texture2D" uid="uid://4c4t8p1nyllx" path="res://ASSET/OFFICE/trasparent_money_bg.png" id="1_rn3pj"]
+[ext_resource type="Texture2D" uid="uid://1q3mkalfcfj8" path="res://ASSET/LIVING_ROOM/transparent_full_screen.png" id="1_nkv2g"]
 [ext_resource type="Texture2D" uid="uid://b6kou7sf01rk5" path="res://ASSET/OFFICE/indianblur.png" id="2_3efn6"]
 [ext_resource type="Texture2D" uid="uid://13s6d8hijvx3" path="res://ASSET/OFFICE/nkblur.png" id="3_f473e"]
 [ext_resource type="Texture2D" uid="uid://daj0wfvc6ldj" path="res://ASSET/OFFICE/russiablur.png" id="4_3pd0h"]
@@ -25,16 +25,16 @@ metadata/_edit_use_anchors_ = true
 z_index = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 1.75
-anchor_top = 1.225
-anchor_right = 1.75
-anchor_bottom = 1.275
+anchor_left = 1.525
+anchor_top = 1.0
+anchor_right = 1.525
+anchor_bottom = 1.05
 offset_left = -23.0
 offset_top = -2.0
 offset_right = 1936.0
 offset_bottom = 1053.0
 scale = Vector2(0.93576, 0.930155)
-texture = ExtResource("1_rn3pj")
+texture = ExtResource("1_nkv2g")
 metadata/_edit_use_anchors_ = true
 
 [node name="India" type="TextureButton" parent="main_scene"]

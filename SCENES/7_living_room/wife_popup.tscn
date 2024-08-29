@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dxf8epx7pbvof"]
+[gd_scene load_steps=16 format=3 uid="uid://dl2vdtpav1mhu"]
 
 [ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_o6jtu"]
 [ext_resource type="Texture2D" uid="uid://ch1o80r8fo357" path="res://ASSET/CHANGE_SCENES_BUTTONS/OFFICE_SMALL.png" id="2_5frj5"]

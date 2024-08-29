@@ -111,3 +111,15 @@ func _on_bachha_button_pressed() -> void:
 
 func _on_clothes_shop_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/9_shopping_mall/clothes_shop.tscn")
+
+
+func _on_close_clothes_shop_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/shopping_mall.tscn")
+
+
+func _on_dine_in_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/9_shopping_mall/dine_in_shop.tscn")
+
+
+func _on_game_zone_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/9_shopping_mall/game_zone_screen.tscn")

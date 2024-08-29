@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://br4ig0im8umg"]
+[gd_scene load_steps=10 format=3 uid="uid://br4ig0im8umg"]
 
 [ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_h0xwp"]
 [ext_resource type="Texture2D" uid="uid://bu0qhk5v1cgd8" path="res://ASSET/CASH/CASH_LOGO.png" id="6_7vxrp"]
+[ext_resource type="Texture2D" uid="uid://dnq5fb0xrddw8" path="res://ASSET/SHOPPING_MALL/transparent_full_screen.png" id="7_bo81l"]
 [ext_resource type="Texture2D" uid="uid://lyrlawytmk04" path="res://ASSET/CASH/CASH_LOGO_BACKGROUND.png" id="7_fh15k"]
 [ext_resource type="Texture2D" uid="uid://bb5qt072cf0wc" path="res://ASSET/OTHER_BUTTONS/SLEEP.png" id="8_42s75"]
+[ext_resource type="Texture2D" uid="uid://cr0uynyth4b3b" path="res://ASSET/SHOPPING_MALL/CLOSE_BUTTON.png" id="8_ablll"]
 [ext_resource type="Texture2D" uid="uid://cix56hhd6his5" path="res://ASSET/OTHER_BUTTONS/PAUSE_BUTTON.png" id="10_v807w"]
 [ext_resource type="Texture2D" uid="uid://b31kjercwhdl6" path="res://ASSET/OTHER_BUTTONS/PLAY_BUTTON.png" id="11_xehiu"]
 [ext_resource type="Texture2D" uid="uid://diacrdsdhq8ki" path="res://ASSET/SHOPPING_MALL/SHOPPING_MALL_BACKGROUND.png" id="12_aoagn"]
@@ -50,9 +52,30 @@ texture_normal = ExtResource("10_v807w")
 texture_pressed = ExtResource("11_xehiu")
 metadata/_edit_use_anchors_ = true
 
+[node name="TextureRect" type="TextureRect" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 50.0
+offset_top = 101.0
+offset_right = 2003.0
+offset_bottom = 1214.0
+scale = Vector2(0.906558, 0.856205)
+texture = ExtResource("7_bo81l")
+
+[node name="close_clothes_shop" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 1693.0
+offset_top = 143.0
+offset_right = 1766.0
+offset_bottom = 215.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_ablll")
+
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-288, -456)
 scale = Vector2(0.981341, 0.984321)
 texture = ExtResource("12_aoagn")
 offset = Vector2(1250, 1000)
-flip_h = true
+
+[connection signal="pressed" from="Control/close_clothes_shop" to="Control" method="_on_close_clothes_shop_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dqdpr75wlechd"]
+[gd_scene load_steps=17 format=3 uid="uid://dqdpr75wlechd"]
 
 [ext_resource type="Script" path="res://SCRIPTS/buttons.gd" id="1_h0xwp"]
 [ext_resource type="Texture2D" uid="uid://ch1o80r8fo357" path="res://ASSET/CHANGE_SCENES_BUTTONS/OFFICE_SMALL.png" id="2_5bxmw"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://diacrdsdhq8ki" path="res://ASSET/SHOPPING_MALL/SHOPPING_MALL_BACKGROUND.png" id="12_aoagn"]
 [ext_resource type="Texture2D" uid="uid://dr6iyvr6y518y" path="res://ASSET/SHOPPING_MALL/salesman_button.png" id="12_eieey"]
 [ext_resource type="Texture2D" uid="uid://cqvj6245k066s" path="res://ASSET/SHOPPING_MALL/clothes_store_button.png" id="13_6xy11"]
+[ext_resource type="Texture2D" uid="uid://88xe4upkyh4l" path="res://ASSET/SHOPPING_MALL/DINE_IN_BUTTON.png" id="14_w5kkp"]
+[ext_resource type="Texture2D" uid="uid://ddfx754xjiu1f" path="res://ASSET/SHOPPING_MALL/game_zone_store_button.png" id="15_wt5tb"]
 
 [node name="SHOPPING MALL" type="Node2D"]
 
@@ -26,7 +28,7 @@ script = ExtResource("1_h0xwp")
 metadata/_edit_use_anchors_ = true
 
 [node name="office" type="TextureButton" parent="Control"]
-top_level = true
+z_index = 1
 layout_mode = 0
 offset_left = 1752.0
 offset_top = 400.0
@@ -37,6 +39,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="living_room" type="TextureButton" parent="Control"]
 top_level = true
+z_index = 1
 layout_mode = 0
 offset_left = 1752.0
 offset_top = 568.0
@@ -47,6 +50,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="market" type="TextureButton" parent="Control"]
 top_level = true
+z_index = 1
 layout_mode = 0
 offset_left = 1752.0
 offset_top = 736.0
@@ -58,6 +62,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="shopping_mall" type="TextureButton" parent="Control"]
 top_level = true
+z_index = 1
 layout_mode = 0
 offset_left = 1752.0
 offset_top = 912.0
@@ -89,6 +94,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="progress_bar_bg" type="Sprite2D" parent="Control"]
 top_level = true
+z_index = 1
 position = Vector2(1608, 232)
 texture = ExtResource("9_ywc7b")
 
@@ -117,13 +123,34 @@ texture_normal = ExtResource("12_eieey")
 [node name="clothes_shop_button" type="TextureButton" parent="Control"]
 top_level = true
 layout_mode = 0
-offset_left = -42.0
-offset_top = 222.0
-offset_right = 643.0
-offset_bottom = 1239.0
-scale = Vector2(0.685641, 0.710343)
+offset_left = -40.0
+offset_top = 235.0
+offset_right = 645.0
+offset_bottom = 1252.0
+scale = Vector2(0.685641, 0.699221)
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("13_6xy11")
+
+[node name="dine_in_button" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 440.0
+offset_top = 470.0
+offset_right = 777.0
+offset_bottom = 935.0
+scale = Vector2(0.988641, 0.998538)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("14_w5kkp")
+
+[node name="game_zone_button" type="TextureButton" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 1440.0
+offset_top = 217.0
+offset_right = 1928.0
+offset_bottom = 970.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("15_wt5tb")
 
 [node name="BACKGROUND" type="Sprite2D" parent="."]
 position = Vector2(-288, -456)
@@ -133,3 +160,5 @@ offset = Vector2(1250, 1000)
 
 [connection signal="pressed" from="Control/salesman" to="Control" method="_on_salesman_pressed"]
 [connection signal="pressed" from="Control/clothes_shop_button" to="Control" method="_on_clothes_shop_button_pressed"]
+[connection signal="pressed" from="Control/dine_in_button" to="Control" method="_on_dine_in_button_pressed"]
+[connection signal="pressed" from="Control/game_zone_button" to="Control" method="_on_game_zone_button_pressed"]

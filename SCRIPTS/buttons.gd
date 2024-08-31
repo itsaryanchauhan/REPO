@@ -68,8 +68,7 @@ func _enter_city_button_pressed() -> void:
 func _on_website_button_pressed():
 	OS.shell_open("https://harsh16bhardwaj.github.io/San_Sam/")
 
-func _on_crossbutton_pressed() -> void:
-	pass # Replace with function body.
+
 
 
 func _on_document_button_pressed() -> void:

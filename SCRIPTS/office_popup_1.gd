@@ -14,7 +14,7 @@ func _on_russia_pressed() -> void:
 
 
 func _on_uk_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/6_office/office_popup3uk.tscn")
+	get_tree().change_scene_to_file("res://SCENES/6_office/office_popup_3uk.tscn")
 
 
 func _on_blur_background_pressed() -> void:

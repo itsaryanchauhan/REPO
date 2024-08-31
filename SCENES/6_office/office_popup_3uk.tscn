@@ -1,17 +1,17 @@
-[gd_scene load_steps=14 format=3 uid="uid://cbile3d0weijl"]
+[gd_scene load_steps=14 format=3 uid="uid://b4exk8nvcu354"]
 
-[ext_resource type="Texture2D" uid="uid://1q3mkalfcfj8" path="res://ASSET/LIVING_ROOM/transparent_full_screen.png" id="1_w2uvu"]
-[ext_resource type="Texture2D" uid="uid://b6kou7sf01rk5" path="res://ASSET/OFFICE/indianblur.png" id="2_l2ru2"]
-[ext_resource type="Texture2D" uid="uid://13s6d8hijvx3" path="res://ASSET/OFFICE/nkblur.png" id="3_k55br"]
-[ext_resource type="Texture2D" uid="uid://daj0wfvc6ldj" path="res://ASSET/OFFICE/russiablur.png" id="4_7xxw7"]
-[ext_resource type="Texture2D" uid="uid://c2xmamfusgwn4" path="res://ASSET/OFFICE/ukblur.png" id="5_aojt7"]
-[ext_resource type="Texture2D" uid="uid://owr5ok60o1rb" path="res://ASSET/OFFICE/BACKGROUND.png" id="6_80ycb"]
-[ext_resource type="Texture2D" uid="uid://dm1woe2pogulo" path="res://ASSET/OFFICE/book.png" id="7_hesh0"]
-[ext_resource type="Texture2D" uid="uid://dtp77r1imtouu" path="res://ASSET/OFFICE/modi_ji.png" id="8_t2qy5"]
-[ext_resource type="Script" path="res://SCRIPTS/OFFICE/R_OPTIONS.gd" id="9_3lbc0"]
-[ext_resource type="Texture2D" uid="uid://c0vgng1po5ytq" path="res://ASSET/OFFICE/idk.png" id="10_chgjw"]
-[ext_resource type="Texture2D" uid="uid://3s8yroeakpik" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/CLOSE_BUTTON.png" id="11_lw2ld"]
-[ext_resource type="Texture2D" uid="uid://bg1prxkhgwytm" path="res://ASSET/TRIAL/Untitled.png" id="12_krcim"]
+[ext_resource type="Texture2D" uid="uid://1q3mkalfcfj8" path="res://ASSET/LIVING_ROOM/transparent_full_screen.png" id="1_38cs2"]
+[ext_resource type="Texture2D" uid="uid://b6kou7sf01rk5" path="res://ASSET/OFFICE/indianblur.png" id="2_45nv6"]
+[ext_resource type="Texture2D" uid="uid://13s6d8hijvx3" path="res://ASSET/OFFICE/nkblur.png" id="3_yupgy"]
+[ext_resource type="Texture2D" uid="uid://daj0wfvc6ldj" path="res://ASSET/OFFICE/russiablur.png" id="4_5in4x"]
+[ext_resource type="Texture2D" uid="uid://c2xmamfusgwn4" path="res://ASSET/OFFICE/ukblur.png" id="5_x5i7d"]
+[ext_resource type="Texture2D" uid="uid://owr5ok60o1rb" path="res://ASSET/OFFICE/BACKGROUND.png" id="6_jlsmo"]
+[ext_resource type="Texture2D" uid="uid://dm1woe2pogulo" path="res://ASSET/OFFICE/book.png" id="7_24u5g"]
+[ext_resource type="Texture2D" uid="uid://dtp77r1imtouu" path="res://ASSET/OFFICE/modi_ji.png" id="8_mxpv0"]
+[ext_resource type="Script" path="res://SCRIPTS/OFFICE/UK_OPTIONS.gd" id="9_hjxti"]
+[ext_resource type="Texture2D" uid="uid://c0vgng1po5ytq" path="res://ASSET/OFFICE/idk.png" id="10_5m5i4"]
+[ext_resource type="Texture2D" uid="uid://3s8yroeakpik" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/CLOSE_BUTTON.png" id="11_lvpj4"]
+[ext_resource type="Texture2D" uid="uid://bg1prxkhgwytm" path="res://ASSET/TRIAL/Untitled.png" id="12_sn52i"]
 
 [sub_resource type="FontVariation" id="FontVariation_3h7pk"]
 
@@ -37,7 +37,7 @@ offset_top = -2.0
 offset_right = 1936.0
 offset_bottom = 1053.0
 scale = Vector2(0.930946, 0.907936)
-texture = ExtResource("1_w2uvu")
+texture = ExtResource("1_38cs2")
 metadata/_edit_use_anchors_ = true
 
 [node name="India" type="TextureButton" parent="main_scene"]
@@ -48,7 +48,7 @@ offset_top = 70.0
 offset_right = 937.0
 offset_bottom = 635.0
 scale = Vector2(0.7, 0.7)
-texture_normal = ExtResource("2_l2ru2")
+texture_normal = ExtResource("2_45nv6")
 metadata/_edit_use_anchors_ = true
 
 [node name="north_korea" type="TextureButton" parent="main_scene"]
@@ -60,7 +60,7 @@ offset_top = 253.0
 offset_right = 1883.0
 offset_bottom = 730.0
 scale = Vector2(0.7, 0.7)
-texture_normal = ExtResource("3_k55br")
+texture_normal = ExtResource("3_yupgy")
 metadata/_edit_use_anchors_ = true
 
 [node name="Russia" type="TextureButton" parent="main_scene"]
@@ -71,7 +71,7 @@ offset_top = 253.0
 offset_right = 407.0
 offset_bottom = 651.0
 scale = Vector2(0.8, 0.8)
-texture_normal = ExtResource("4_7xxw7")
+texture_normal = ExtResource("4_5in4x")
 metadata/_edit_use_anchors_ = true
 
 [node name="UK" type="TextureButton" parent="main_scene"]
@@ -82,13 +82,13 @@ offset_top = 63.0
 offset_right = 1396.0
 offset_bottom = 540.0
 scale = Vector2(0.85, 0.85)
-texture_normal = ExtResource("5_aojt7")
+texture_normal = ExtResource("5_x5i7d")
 metadata/_edit_use_anchors_ = true
 
 [node name="background" type="Sprite2D" parent="main_scene"]
 position = Vector2(952, 534)
 scale = Vector2(0.968034, 0.970702)
-texture = ExtResource("6_80ycb")
+texture = ExtResource("6_jlsmo")
 
 [node name="Constitution_book" type="TextureRect" parent="main_scene"]
 z_index = 5
@@ -97,7 +97,7 @@ offset_left = 639.0
 offset_top = 524.0
 offset_right = 1361.0
 offset_bottom = 1010.0
-texture = ExtResource("7_hesh0")
+texture = ExtResource("7_24u5g")
 metadata/_edit_use_anchors_ = true
 
 [node name="leader" type="TextureRect" parent="main_scene"]
@@ -108,7 +108,7 @@ offset_top = 532.0
 offset_right = 1038.0
 offset_bottom = 1271.0
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("8_t2qy5")
+texture = ExtResource("8_mxpv0")
 metadata/_edit_use_anchors_ = true
 
 [node name="overlay" type="Control" parent="."]
@@ -116,7 +116,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("9_3lbc0")
+script = ExtResource("9_hjxti")
 
 [node name="Constitution_clicked" type="TextureRect" parent="overlay"]
 z_index = 11
@@ -126,77 +126,77 @@ anchor_left = -0.625
 anchor_top = 0.025
 anchor_right = -0.625
 anchor_bottom = 0.025
-offset_left = 94.0
-offset_top = 235.0
-offset_right = 484.0
-offset_bottom = 700.0
-texture = ExtResource("10_chgjw")
+offset_left = 1038.0
+offset_top = 58.0
+offset_right = 1428.0
+offset_bottom = 523.0
+texture = ExtResource("10_5m5i4")
 
 [node name="cross" type="TextureButton" parent="overlay"]
 top_level = true
 z_index = 15
 layout_mode = 0
-offset_left = 360.0
-offset_top = 249.0
-offset_right = 433.0
-offset_bottom = 321.0
+offset_left = 1304.0
+offset_top = 72.0
+offset_right = 1377.0
+offset_bottom = 144.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource("11_lw2ld")
+texture_normal = ExtResource("11_lvpj4")
 
 [node name="OPTION1" type="TextureButton" parent="overlay"]
 top_level = true
 z_index = 15
 layout_mode = 0
-offset_left = 242.0
-offset_top = 387.0
-offset_right = 356.0
-offset_bottom = 459.0
+offset_left = 1186.0
+offset_top = 210.0
+offset_right = 1300.0
+offset_bottom = 282.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource("12_krcim")
+texture_normal = ExtResource("12_sn52i")
 
 [node name="OPTION2" type="TextureButton" parent="overlay"]
 top_level = true
 z_index = 15
 layout_mode = 0
-offset_left = 232.0
-offset_top = 440.0
-offset_right = 346.0
-offset_bottom = 512.0
+offset_left = 1176.0
+offset_top = 263.0
+offset_right = 1290.0
+offset_bottom = 335.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource("12_krcim")
+texture_normal = ExtResource("12_sn52i")
 
 [node name="OPTION3" type="TextureButton" parent="overlay"]
 top_level = true
 z_index = 15
 layout_mode = 0
-offset_left = 229.0
-offset_top = 493.0
-offset_right = 343.0
-offset_bottom = 565.0
+offset_left = 1173.0
+offset_top = 316.0
+offset_right = 1287.0
+offset_bottom = 388.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource("12_krcim")
+texture_normal = ExtResource("12_sn52i")
 
 [node name="OPTION4" type="TextureButton" parent="overlay"]
 top_level = true
 z_index = 15
 layout_mode = 0
-offset_left = 232.0
-offset_top = 541.0
-offset_right = 346.0
-offset_bottom = 613.0
+offset_left = 1176.0
+offset_top = 364.0
+offset_right = 1290.0
+offset_bottom = 436.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource("12_krcim")
+texture_normal = ExtResource("12_sn52i")
 
 [node name="OPTION5" type="TextureButton" parent="overlay"]
 top_level = true
 z_index = 15
 layout_mode = 0
-offset_left = 229.0
-offset_top = 599.0
-offset_right = 343.0
-offset_bottom = 671.0
+offset_left = 1173.0
+offset_top = 422.0
+offset_right = 1287.0
+offset_bottom = 494.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource("12_krcim")
+texture_normal = ExtResource("12_sn52i")
 
 [node name="Label" type="Label" parent="overlay"]
 top_level = true

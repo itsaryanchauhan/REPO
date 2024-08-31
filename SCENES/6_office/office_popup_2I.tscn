@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://g8vcsqqamvus"]
+[gd_scene load_steps=14 format=3 uid="uid://g8vcsqqamvus"]
 
 [ext_resource type="Texture2D" uid="uid://1q3mkalfcfj8" path="res://ASSET/LIVING_ROOM/transparent_full_screen.png" id="1_0ky0k"]
+[ext_resource type="Script" path="res://SCRIPTS/OFFICE/INDIA_OPTIONS.gd" id="1_imf53"]
 [ext_resource type="Texture2D" uid="uid://b6kou7sf01rk5" path="res://ASSET/OFFICE/indianblur.png" id="2_tagnx"]
 [ext_resource type="Texture2D" uid="uid://13s6d8hijvx3" path="res://ASSET/OFFICE/nkblur.png" id="3_b41ne"]
 [ext_resource type="Texture2D" uid="uid://daj0wfvc6ldj" path="res://ASSET/OFFICE/russiablur.png" id="4_0sd3x"]
@@ -9,13 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dm1woe2pogulo" path="res://ASSET/OFFICE/book.png" id="7_q1pul"]
 [ext_resource type="Texture2D" uid="uid://dtp77r1imtouu" path="res://ASSET/OFFICE/modi_ji.png" id="8_0k0qn"]
 [ext_resource type="Texture2D" uid="uid://c0vgng1po5ytq" path="res://ASSET/OFFICE/idk.png" id="8_hpyqi"]
-[ext_resource type="Script" path="res://SCRIPTS/overlay_I1.gd" id="9_p05be"]
+[ext_resource type="Texture2D" uid="uid://bg1prxkhgwytm" path="res://ASSET/TRIAL/Untitled.png" id="9_6upxr"]
 [ext_resource type="Texture2D" uid="uid://3s8yroeakpik" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/CLOSE_BUTTON.png" id="11_40oap"]
-[ext_resource type="Script" path="res://SCRIPTS/drag_articles_india.gd" id="12_07q6u"]
-[ext_resource type="Script" path="res://SCRIPTS/drop_articles.gd" id="13_l4gbn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2q0f"]
-size = Vector2(549, 366.5)
+[sub_resource type="FontVariation" id="FontVariation_3h7pk"]
 
 [node name="office_popup_2I" type="Node"]
 
@@ -118,7 +116,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("9_p05be")
+script = ExtResource("1_imf53")
 
 [node name="Constitution_clicked" type="TextureRect" parent="overlay"]
 z_index = 11
@@ -145,31 +143,77 @@ offset_bottom = 146.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("11_40oap")
 
-[node name="text" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="text"]
+[node name="OPTION1" type="TextureButton" parent="overlay"]
 top_level = true
-z_index = 9
+z_index = 15
 layout_mode = 0
-offset_left = 61.0
-offset_top = 534.0
-offset_right = 101.0
-offset_bottom = 574.0
-scale = Vector2(8.25931, 6.62768)
-text = "shit"
-script = ExtResource("12_07q6u")
+offset_left = 680.0
+offset_top = 212.0
+offset_right = 794.0
+offset_bottom = 284.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_6upxr")
 
-[node name="Area2D" type="Area2D" parent="text"]
-script = ExtResource("13_l4gbn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="text/Area2D"]
+[node name="OPTION2" type="TextureButton" parent="overlay"]
 top_level = true
-position = Vector2(991.5, 753.75)
-shape = SubResource("RectangleShape2D_x2q0f")
+z_index = 15
+layout_mode = 0
+offset_left = 670.0
+offset_top = 265.0
+offset_right = 784.0
+offset_bottom = 337.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_6upxr")
+
+[node name="OPTION3" type="TextureButton" parent="overlay"]
+top_level = true
+z_index = 15
+layout_mode = 0
+offset_left = 667.0
+offset_top = 318.0
+offset_right = 781.0
+offset_bottom = 390.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_6upxr")
+
+[node name="OPTION4" type="TextureButton" parent="overlay"]
+top_level = true
+z_index = 15
+layout_mode = 0
+offset_left = 670.0
+offset_top = 366.0
+offset_right = 784.0
+offset_bottom = 438.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_6upxr")
+
+[node name="OPTION5" type="TextureButton" parent="overlay"]
+top_level = true
+z_index = 15
+layout_mode = 0
+offset_left = 667.0
+offset_top = 424.0
+offset_right = 781.0
+offset_bottom = 496.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9_6upxr")
+
+[node name="Label" type="Label" parent="overlay"]
+top_level = true
+z_index = 5
+layout_mode = 0
+offset_left = 728.0
+offset_top = 564.0
+offset_right = 796.0
+offset_bottom = 587.0
+scale = Vector2(3.0983, 3.09668)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_3h7pk")
+text = "sdfgh"
 
 [connection signal="pressed" from="overlay/cross" to="overlay" method="_on_cross_pressed"]
-[connection signal="body_entered" from="text/Area2D" to="text/Area2D" method="_on_body_entered"]
+[connection signal="pressed" from="overlay/OPTION1" to="overlay" method="_on_option_1_pressed"]
+[connection signal="pressed" from="overlay/OPTION2" to="overlay" method="_on_option_2_pressed"]
+[connection signal="pressed" from="overlay/OPTION3" to="overlay" method="_on_option_3_pressed"]
+[connection signal="pressed" from="overlay/OPTION4" to="overlay" method="_on_option_4_pressed"]
+[connection signal="pressed" from="overlay/OPTION5" to="overlay" method="_on_option_5_pressed"]

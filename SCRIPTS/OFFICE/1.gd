@@ -5,4 +5,9 @@ func _ready():
 	
 func update_display():
 	var selected_articles = Global.get_selected_articles()
-	$Label.text = "Selected Articles:\n" + str(selected_articles)
+	var display_text = "Selected Articles:\n"
+	
+	for article in selected_articles:
+		display_text += "- " + article + "\n"
+	
+	$Label.text = display_text

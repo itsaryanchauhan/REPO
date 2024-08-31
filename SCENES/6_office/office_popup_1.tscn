@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://baofqbdk2ai8m"]
+[gd_scene load_steps=11 format=3 uid="uid://dnpesfforirl8"]
 
 [ext_resource type="Script" path="res://SCRIPTS/office_popup_1.gd" id="1_wl8sp"]
 [ext_resource type="Script" path="res://SCRIPTS/OFFICE/1.gd" id="2_asx0y"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://owr5ok60o1rb" path="res://ASSET/OFFICE/BACKGROUND.png" id="6_0r84i"]
 [ext_resource type="Texture2D" uid="uid://dm1woe2pogulo" path="res://ASSET/OFFICE/book.png" id="7_xspwy"]
 
-[sub_resource type="FontVariation" id="FontVariation_8jwf5"]
+[sub_resource type="FontVariation" id="FontVariation_4oocb"]
 
 [node name="office_popup_1" type="Node"]
 script = ExtResource("1_wl8sp")
@@ -102,11 +102,11 @@ top_level = true
 z_index = 5
 offset_left = 728.0
 offset_top = 564.0
-offset_right = 902.0
-offset_bottom = 684.0
-scale = Vector2(3.0983, 3.09668)
+offset_right = 796.0
+offset_bottom = 587.0
+scale = Vector2(1.77715, 1.56617)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = SubResource("FontVariation_8jwf5")
+theme_override_fonts/font = SubResource("FontVariation_4oocb")
 text = "sdfgh"
 
 [connection signal="pressed" from="main_scene/blur_background" to="." method="_on_blur_background_pressed"]

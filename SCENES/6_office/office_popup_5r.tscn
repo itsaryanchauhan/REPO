@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://3s8yroeakpik" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/CLOSE_BUTTON.png" id="11_lw2ld"]
 [ext_resource type="Texture2D" uid="uid://bg1prxkhgwytm" path="res://ASSET/TRIAL/Untitled.png" id="12_krcim"]
 
-[sub_resource type="FontVariation" id="FontVariation_3h7pk"]
+[sub_resource type="FontVariation" id="FontVariation_tf24q"]
 
 [node name="office_popup_2I" type="Node"]
 
@@ -206,14 +206,13 @@ texture_normal = ExtResource("12_krcim")
 [node name="Label" type="Label" parent="overlay"]
 top_level = true
 z_index = 5
-layout_mode = 0
 offset_left = 728.0
 offset_top = 564.0
 offset_right = 796.0
 offset_bottom = 587.0
-scale = Vector2(3.0983, 3.09668)
+scale = Vector2(1.77715, 1.56617)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = SubResource("FontVariation_3h7pk")
+theme_override_fonts/font = SubResource("FontVariation_tf24q")
 text = "sdfgh"
 
 [connection signal="pressed" from="overlay/cross" to="overlay" method="_on_cross_pressed"]

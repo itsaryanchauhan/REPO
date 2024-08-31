@@ -16,7 +16,7 @@ offset_bottom = 40.0
 [node name="san_sum_logo" type="Sprite2D" parent="Control"]
 top_level = true
 position = Vector2(976, 552)
-scale = Vector2(1.31043, 1.37949)
+scale = Vector2(1.52674, 1.59792)
 texture = ExtResource("6_0mx4a")
 
 [node name="Timer" type="Timer" parent="Control"]

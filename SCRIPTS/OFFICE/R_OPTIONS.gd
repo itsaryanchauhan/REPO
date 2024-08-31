@@ -1,36 +1,31 @@
-# ExampleScene.gd
 extends Control
-
-var scene_index = 0  # Set this index uniquely for each scene (0 for Scene1, 1 for Scene2, etc.)
 
 func _ready():
 	update_display()
 
-func _on_option_1_pressed() -> void:
-	Global.save_selection(scene_index, "Option 1")
+func _on_option_1_pressed():
+	Global.save_article(0, "Country 1, Article 1")  # Position 0 corresponds to the first topic (e.g., equality)
 	update_display()
 
-func _on_option_2_pressed() -> void:
-	Global.save_selection(scene_index, "Option 2")
+func _on_option_2_pressed():
+	Global.save_article(1, "Country 1, Article 2")  # Position 1 for the second topic (e.g., freedom)
 	update_display()
 
-
-func _on_option_3_pressed() -> void:
-	Global.save_selection(scene_index, "Option 3")
+func _on_option_3_pressed():
+	Global.save_article(2, "Country 1, Article 3")  # Position 2 for the third topic (e.g., justice)
 	update_display()
 
-
-func _on_option_4_pressed() -> void:
-	Global.save_selection(scene_index, "Option 4")
+func _on_option_4_pressed():
+	Global.save_article(3, "Country 1, Article 4")  # Position 3 for the fourth topic (e.g., security)
 	update_display()
 
-
-func _on_option_5_pressed() -> void:
-	Global.save_selection(scene_index, "Option 5")
+func _on_option_5_pressed():
+	Global.save_article(4, "Country 1, Article 5")  # Position 4 for the fifth topic (e.g., development)
 	update_display()
 
 func update_display():
-	$Label.text = str(Global.selected_options)
+	var selected_articles = Global.get_selected_articles()
+	$Label.text = "Selected Articles:\n" + str(selected_articles)
 
 
 func _on_cross_pressed() -> void:

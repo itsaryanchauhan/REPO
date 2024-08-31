@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c2xmamfusgwn4" path="res://ASSET/OFFICE/ukblur.png" id="5_fcskd"]
 [ext_resource type="Texture2D" uid="uid://owr5ok60o1rb" path="res://ASSET/OFFICE/BACKGROUND.png" id="6_unokq"]
 [ext_resource type="Texture2D" uid="uid://dm1woe2pogulo" path="res://ASSET/OFFICE/book.png" id="7_k1tmm"]
-[ext_resource type="Texture2D" uid="uid://dtp77r1imtouu" path="res://ASSET/OFFICE/modi_ji.png" id="8_1d6gx"]
+[ext_resource type="Texture2D" uid="uid://dgcuj547ivx8q" path="res://ASSET/OFFICE/kim.png" id="8_rex1a"]
 [ext_resource type="Script" path="res://SCRIPTS/OFFICE/NK_OPTIONS.gd" id="9_g2dj1"]
 [ext_resource type="Texture2D" uid="uid://c0vgng1po5ytq" path="res://ASSET/OFFICE/idk.png" id="10_vxydj"]
 [ext_resource type="Texture2D" uid="uid://3s8yroeakpik" path="res://ASSET/CITADEL/5a_SPIN_THE_WHEEL/CLOSE_BUTTON.png" id="11_iqcuj"]
@@ -102,13 +102,18 @@ metadata/_edit_use_anchors_ = true
 
 [node name="leader" type="TextureRect" parent="main_scene"]
 z_index = 5
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.95
+anchor_top = -0.25
+anchor_right = 0.65
+anchor_bottom = 0.275
 offset_left = 470.0
 offset_top = 532.0
 offset_right = 1038.0
 offset_bottom = 1271.0
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("8_1d6gx")
+texture = ExtResource("8_rex1a")
 metadata/_edit_use_anchors_ = true
 
 [node name="overlay" type="Control" parent="."]

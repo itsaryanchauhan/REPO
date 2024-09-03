@@ -100,6 +100,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Label" type="Label" parent="main_scene"]
 top_level = true
 z_index = 5
+layout_mode = 0
 offset_left = 728.0
 offset_top = 564.0
 offset_right = 796.0

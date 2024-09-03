@@ -206,6 +206,7 @@ texture_normal = ExtResource("12_sn52i")
 [node name="Label" type="Label" parent="overlay"]
 top_level = true
 z_index = 5
+layout_mode = 0
 offset_left = 728.0
 offset_top = 564.0
 offset_right = 796.0
